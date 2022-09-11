@@ -73,3 +73,10 @@ const zeroFollowers = accounts.some((account) => {
 });
 
 console.log(zeroFollowers); //false
+
+//EVERY METHOD
+console.log(
+  accounts.every((account) => {
+    return account.noOfFollowers >= 100;
+  })
+); //returns true
