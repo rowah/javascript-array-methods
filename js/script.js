@@ -66,3 +66,10 @@ accounts.forEach((account) => {
 // 'BelieveInYou'
 // 'PeacefulPlace'
 // 'Rodenta'
+
+//SOME METHOD
+const zeroFollowers = accounts.some((account) => {
+  return account.noOfFollowers == 0;
+});
+
+console.log(zeroFollowers); //false
