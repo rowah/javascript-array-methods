@@ -1,6 +1,6 @@
 const accounts = [
   { accountName: "OptimisticPanda", noOfFollowers: 100 },
-  { accountName: "SunshineSoul", noOfFollowers: 200 },
+  { accountName: "SunshineSoul", noOfFollowers: 400 },
   { accountName: "GratefulHeart", noOfFollowers: 150 },
   { accountName: "DynamicDiva", noOfFollowers: 300 },
   { accountName: "SassyStarlet", noOfFollowers: 1200 },
@@ -22,7 +22,7 @@ console.log(lessThan500Followers);
 //   },
 //   {
 //     accountName: 'SunshineSoul',
-//     noOfFollowers: 200
+//     noOfFollowers: 400
 //   },
 //   {
 //     accountName: 'GratefulHeart',
@@ -45,7 +45,7 @@ console.log(accounts);
 const moreFollowers = accounts.map((account) => {
   return account.noOfFollowers + 10;
 });
-console.log(moreFollowers);
+console.log(moreFollowers); //[110, 410, 160, 310, 1210, 56010, 436, 12311]
 
 //FIND METHOD
 const foundAcc = accounts.find((account) => {
@@ -80,3 +80,15 @@ console.log(
     return account.noOfFollowers >= 100;
   })
 ); //returns true
+
+//REDUCE METHOD
+const allFollowers = accounts.reduce(
+  (previousTotal, currentAccount) =>
+    previousTotal + currentAccount.noOfFollowers,
+  0
+);
+console.log(allFollowers); // 70877
+
+//INCLUDES METHOD
+const followers = [100, 400, 130, 300, 1200, 56000, 426, 12301];
+console.log(followers.includes(12301));
