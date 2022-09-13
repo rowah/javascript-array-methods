@@ -138,3 +138,20 @@ console.log(followers.includes(12301)); //true
 // 6: {accountName: 'BelieveInYou', noOfFollowers: 56000}
 // 7: {accountName: 'PeacefulPlace', noOfFollowers: 426}
 // 8: {accountName: 'Rodenta', noOfFollowers: 12301}
+
+//SLICE METHOD
+//Extracts a section of the calling array and returns a new array, with the original array remaining unmodified
+// console.log(accounts.slice(3));
+
+//Expected Output
+// [
+//   { accountName: "DynamicDiva", noOfFollowers: 300 },
+//   { accountName: "SassyStarlet", noOfFollowers: 1200 },
+//   { accountName: "BelieveInYou", noOfFollowers: 56000 },
+//   { accountName: "PeacefulPlace", noOfFollowers: 426 },
+//   { accountName: "Rodenta", noOfFollowers: 12301 },
+// ];
+// console.log(accounts);
+// console.log(accounts.slice(2, 4));
+// [{accountName: 'GratefulHeart', noOfFollowers: 150},
+// {accountName: 'DynamicDiva', noOfFollowers: 300}]
