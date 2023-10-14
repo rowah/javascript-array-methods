@@ -151,7 +151,7 @@ console.log(followers.includes(12301)); //true
 //   { accountName: "PeacefulPlace", noOfFollowers: 426 },
 //   { accountName: "Rodenta", noOfFollowers: 12301 },
 // ];
-// console.log(accounts);
+console.log(accounts);
 // console.log(accounts.slice(2, 4));
 // [{accountName: 'GratefulHeart', noOfFollowers: 150},
 // {accountName: 'DynamicDiva', noOfFollowers: 300}]
